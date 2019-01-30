@@ -1,4 +1,3 @@
-
 public class Book {
 
 	//Initializing Book values.
@@ -15,9 +14,61 @@ public class Book {
 		price=p;
 	}
 	
+	public String getTitle()
+	{
+		return title;
+	}
+	
+	public void setTitle(String title)
+	{
+		this.title=title;
+	}
+	
+	public String getAuthor()
+	{
+		return author;
+	}
+	
+	public void setAuthor(String author)
+	{
+		this.author=author;
+	}
+	
+	public long getISBN()
+	{
+		return ISBN;
+	}
+	
+	public void setISBN(long ISBN)
+	{
+		this.ISBN=ISBN;
+	}
+	
+	public double getPrice()
+	{
+		return price;
+	}
+	
+	public void setPrice(double price)
+	{
+		this.price=price;
+	}
+	
+	public static int findNumberOfCreatedBooks()
+	{
+		
+		return 0;
+	}
+	
+	public boolean equals()
+	{
+		return false;
+		
+	}
+	
 	//Method to display any book object values.
 	public String toString()
 	{
-		return("The title of the book is " + title + ". \nThe author of the book is " + author + ". \nThe ISBN of the book is " + ISBN + ". \nThe price of the book is $" + price + ".");
+		return("\nAuthor: " + author + ". \nTitle: " + title + ". \nISBN: " + ISBN + ". \nPrice: " + price + ".");
 	}
 }
